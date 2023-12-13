@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+    <link rel="stylesheet" href="./External/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        overflow: hidden;
+        padding: 5px 10px;
+      }
+      .content {
+        border: 5px solid #5d5b5bdb;
+      }
+      .header {
+        height: 100px;
+        background: #13bfefd1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .navBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 5rem;
+      }
+      .logo p {
+        font-size: 2rem;
+      }
+      .wrapper {
+        padding: 5px 20rem 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .top-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 5px;
+      }
+      .top-left {
+        width: 50%;
+        background: rgb(0, 255, 0);
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-right: 5px;
+      }
+      .top-right {
+        width: 30%;
+        background: #cc00ffd6;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      .bottom-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 5px;
+      }
+      .bottom-left {
+        width: 40%;
+        background: rgb(255, 153, 0);
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        margin-right: 5px;
+      }
+      .bottom-right {
+        width: 40%;
+        background: rgb(255, 153, 0);
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+      }
+      .footer {
+        height: 100px;
+        background: #1338efd1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .footerBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 5rem;
+      }
+      @media screen and (max-width: 768px) {
+        .navBox {
+          padding: 0 0.5rem;
+        }
+
+        .wrapper {
+          padding: 5px 0.7rem 0;
+        }
+
+        .top-left,
+        .top-right,
+        .bottom-left,
+        .bottom-right {
+          height: 10rem;
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <header class="header">
+          <nav class="navBox">
+            <div class="logo">
+              <p><b>.header</b></p>
+            </div>
+          </nav>
+        </header>
+        <div class="wrapper">
+          <div class="top-wrapper">
+            <div class="top-left">
+              <p><b>.main-content</b></p>
+            </div>
+            <div class="top-right">
+              <p><b>.sidebar</b></p>
+            </div>
+          </div>
+          <div class="bottom-wrapper">
+            <div class="bottom-left">
+              <p><b>.twin</b></p>
+            </div>
+            <div class="bottom-right">
+              <p><b>.twin</b></p>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <foot class="footerBox">
+            <div class="logo">
+              <p><b>.footer</b></p>
+            </div>
+          </foot>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
